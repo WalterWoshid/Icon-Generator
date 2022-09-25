@@ -26,6 +26,7 @@
     "convert_icons": "xml2json icon_associations.xml icon_associations.json",
     "convert_folders": "xml2json folder_associations.xml folder_associations.json"
   },
+  "os": ["linux"],
   "author": "",
   "license": "MIT",
   "devDependencies": {
