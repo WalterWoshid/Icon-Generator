@@ -1641,7 +1641,7 @@
 					"fileNames": "*.blade,*.blade.php",
 					"name": "Blade",
 					"iconColor": "E87537",
-					"url": "https://laravel.com/docs/8.x/blade",
+					"url": "https://laravel.com/docs/blade",
 					"priority": "100",
 					"iconType": "FILE",
 					"pattern": ".*\\.blade(\\.php)?$",

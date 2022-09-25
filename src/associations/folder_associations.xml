@@ -254,6 +254,14 @@
                iconType="FOLDER"
                pattern="^\.bitcoin$"
                icon="/bitcoin.svg"/>
+        <regex folderNames="blade"
+               name="Blade"
+               folderColor="5E6569"
+               folderIconColor="E87537"
+               priority="100"
+               iconType="FOLDER"
+               pattern="^blade$"
+               icon="/blade.svg"/>
         <regex folderNames="bloc,blocs,.bloc,_blocs"
                name="Bloc"
                folderColor="039BE5"

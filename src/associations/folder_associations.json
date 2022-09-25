@@ -283,6 +283,16 @@
 					"icon": "/bitcoin.svg"
 				},
 				{
+					"folderNames": "blade",
+					"name": "Blade",
+					"folderColor": "30363A",
+					"folderIconColor": "E87537",
+					"priority": "100",
+					"iconType": "FOLDER",
+					"pattern": "^blade$",
+					"icon": "/blade.svg"
+				},
+				{
 					"folderNames": "bloc,blocs,.bloc,_blocs",
 					"name": "Bloc",
 					"folderColor": "039BE5",
