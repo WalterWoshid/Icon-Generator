@@ -13,6 +13,16 @@
 					"icon": "/acre.svg"
 				},
 				{
+					"folderNames": "adapter,.adapter,_adapter,adapters,.adapters,_adapters",
+					"name": "Adapter",
+					"folderColor": "F26B00",
+					"folderIconColor": "FFECB3",
+					"priority": "100",
+					"iconType": "FOLDER",
+					"pattern": "^[\\._]?adapters?$",
+					"icon": "/adapter.svg"
+				},
+				{
 					"folderNames": "addon,addons,_addon,_addons,.addon,.addons",
 					"name": "Addons",
 					"folderColor": "7CB342",
@@ -53,6 +63,16 @@
 					"icon": "/alacritty.svg"
 				},
 				{
+					"folderNames": "amplication,.amplication,_amplication",
+					"name": "Amplication",
+					"folderColor": "7E57C2",
+					"folderIconColor": "E1BEE7",
+					"priority": "100",
+					"iconType": "FOLDER",
+					"pattern": "^[\\._]?amplication$",
+					"icon": "/amplication.svg"
+				},
+				{
 					"folderNames": "android,androidApp,.android,_android",
 					"name": "Android",
 					"folderColor": "8bc34a",
@@ -73,13 +93,13 @@
 					"icon": "/animations.svg"
 				},
 				{
-					"folderNames": "group_vars,host_vars,vars,roles,.group_vars,_roles,_host_vars,.vars",
+					"folderNames": "group_vars,host_vars,vars,roles,.group_vars,_roles,_host_vars,.vars,_playbooks,playbooks",
 					"name": "Ansible",
 					"folderColor": "ef5350",
 					"folderIconColor": "ffcdd2",
 					"priority": "100",
 					"iconType": "FOLDER",
-					"pattern": "^[\\._]?(group_vars|host_vars|vars|roles)$",
+					"pattern": "^[\\._]?(group_vars|host_vars|vars|roles|playbooks)$",
 					"icon": "/ansible.svg"
 				},
 				{
@@ -433,13 +453,13 @@
 					"icon": "/composer.svg"
 				},
 				{
-					"folderNames": "config,conf,settings,.config,.conf,.settings,_config,_conf,_settings",
+					"folderNames": "config,conf,settings,.config,.conf,.settings,_config,_conf,_settings,configuration,.configuration",
 					"name": "Config",
 					"folderColor": "00ACC1",
 					"folderIconColor": "80DEEA",
 					"priority": "100",
 					"iconType": "FOLDER",
-					"pattern": "^[\\._]?(config|conf|settings)$",
+					"pattern": "^[\\._]?(config|conf(iguration)?|settings)$",
 					"icon": "/config.svg"
 				},
 				{
@@ -543,6 +563,16 @@
 					"icon": "/cubit.svg"
 				},
 				{
+					"folderNames": "cue.mod",
+					"name": "Cue",
+					"folderColor": "1976D2",
+					"folderIconColor": "BBDEFB",
+					"priority": "100",
+					"iconType": "FOLDER",
+					"pattern": "^cue\\.mod$",
+					"icon": "/cue.svg"
+				},
+				{
 					"folderNames": "custom,.custom,_custom",
 					"name": "Custom",
 					"folderColor": "ff7043",
@@ -611,6 +641,16 @@
 					"iconType": "FOLDER",
 					"pattern": "^[\\._]?(debug|debugging)$",
 					"icon": "/debug.svg"
+				},
+				{
+					"folderNames": "decorators,decorator,.decorators,.decorator,_decorators,_decorator,annotations,annotation,.annotations,.annotation,_annotations,_annotation",
+					"name": "Decorators",
+					"folderColor": "AB47BC",
+					"folderIconColor": "E1BEE7",
+					"priority": "100",
+					"iconType": "FOLDER",
+					"pattern": "^[\\._]?(decorators?|annotations?)$",
+					"icon": "/decorators.svg"
 				},
 				{
 					"folderNames": "delta,deltas,diff,.delta,_delta,.deltas,_diff,.diff",
@@ -1233,6 +1273,16 @@
 					"icon": "/json.svg"
 				},
 				{
+					"folderNames": "jwt,.jwt,_jwt",
+					"name": "JWT",
+					"folderColor": "D63AFF",
+					"folderIconColor": "E1BEE7",
+					"priority": "100",
+					"iconType": "FOLDER",
+					"pattern": "^[\\._]?jwt$",
+					"icon": "/jwt.svg"
+				},
+				{
 					"folderNames": "key,keys,cert,certs,_keys,.keys,.certs,_cert",
 					"name": "Keys",
 					"folderColor": "BDBDBD",
@@ -1303,6 +1353,16 @@
 					"icon": "/less.svg"
 				},
 				{
+					"folderNames": "linux,.linux,_linux,nux,_nux,unix,.unix,_unix",
+					"name": "Linux",
+					"folderColor": "546E7A",
+					"folderIconColor": "BDBDBD",
+					"priority": "100",
+					"iconType": "FOLDER",
+					"pattern": "^[\\._]?(linux|nux|unix)$",
+					"icon": "/linux.svg"
+				},
+				{
 					"folderNames": "log,logs,.log,_logs",
 					"name": "Logs",
 					"folderColor": "607D8B",
@@ -1371,6 +1431,16 @@
 					"iconType": "FOLDER",
 					"pattern": "^\\.(appex|bundle|ccl|component|framework|ideplugin|kext|mdimporter|osax|(osirix)?plugin|qlgenerator)$",
 					"icon": "/osx.svg"
+				},
+				{
+					"folderNames": "mac,.mac,_mac,macos,.macos,_macos,osx,.osx,_osx",
+					"name": "Mac",
+					"folderColor": "03A9F4",
+					"folderIconColor": "89DDFF",
+					"priority": "100",
+					"iconType": "FOLDER",
+					"pattern": "^\\.(mac(os)?|osx)$",
+					"icon": "/mac.svg"
 				},
 				{
 					"folderNames": "message,messages,msg,msgs,.msg,_msgs,_messages,.messages",
@@ -1491,6 +1561,16 @@
 					"iconType": "FOLDER",
 					"pattern": "^[\\._]?mongo(db)?$",
 					"icon": "/mongo.svg"
+				},
+				{
+					"folderNames": "geo,.geo,_geo,navigation,navigate,.navigations,_navigations,.navigate",
+					"name": "Navigation",
+					"folderColor": "ff7043",
+					"folderIconColor": "ffccbc",
+					"priority": "100",
+					"iconType": "FOLDER",
+					"pattern": "[\\._]?(geo|navigate|navigations?)",
+					"icon": "/navigation.svg"
 				},
 				{
 					"folderNames": ".netlify,netlify,_netlify",
@@ -2133,6 +2213,16 @@
 					"icon": "/tasks.svg"
 				},
 				{
+					"folderNames": "src-tauri,tauri,.tauri,_tauri,.src-tauri",
+					"name": "Tauri",
+					"folderColor": "26C6DA",
+					"folderIconColor": "FFECB3",
+					"priority": "100",
+					"iconType": "FOLDER",
+					"pattern": "^[\\._]?(src-)?tauri$",
+					"icon": "/tauri.svg"
+				},
+				{
 					"folderNames": "tech,.tech,technology,_technology,technologies,.technologies",
 					"name": "Tech",
 					"folderColor": "8a2be2",
@@ -2381,6 +2471,16 @@
 					"iconType": "FOLDER",
 					"pattern": "^[\\._]?webpack$",
 					"icon": "/webpack.svg"
+				},
+				{
+					"folderNames": "windows,.windows,_windows,.win,_win,win",
+					"name": "Windows",
+					"folderColor": "1E88E5",
+					"folderIconColor": "90CAF9",
+					"priority": "100",
+					"iconType": "FOLDER",
+					"pattern": "^[\\._]?(win|windows)$",
+					"icon": "/windows.svg"
 				},
 				{
 					"folderNames": ".wine",

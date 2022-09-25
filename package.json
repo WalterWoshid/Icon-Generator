@@ -23,8 +23,8 @@
     "preview": "yon run compile && ts-node ./bin/preview all -o file",
     "kotlin": "yon run compile && ts-node ./bin/kotlin all -o file",
     "convert": "yon run convert_icons && yon run convert_folders",
-    "convert_icons": "xml2json icon_associations.xml icon_associations.json",
-    "convert_folders": "xml2json folder_associations.xml folder_associations.json"
+    "convert_icons": "xml2json src/associations/icon_associations.xml src/associations/icon_associations.json",
+    "convert_folders": "xml2json src/associations/folder_associations.xml src/associations/folder_associations.json"
   },
   "os": [
     "linux"

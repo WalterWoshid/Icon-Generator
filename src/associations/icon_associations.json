@@ -23,6 +23,13 @@
 					"priority": "10",
 					"iconColor": "FFB62C",
 					"icon": "/icons/files/svg.svg"
+				},
+				{
+					"name": "SVG Dark",
+					"type": "SVG",
+					"priority": "11",
+					"iconColor": "FFCB6B",
+					"icon": "/icons/files/svg.svg"
 				}
 			],
 			"regex": [
@@ -64,17 +71,35 @@
 				},
 				{
 					"fileNames": "TEMPLATE.md,TEMPLATE.txt",
-					"name": "Github TEMPLATE",
+					"name": "GitHub",
 					"priority": "1000",
 					"iconType": "FILE",
 					"pattern": ".*TEMPLATE\\.(md|txt)$",
-					"iconColor": "46ab6c",
+					"iconColor": "000000",
+					"icon": "/icons/files/github.svg"
+				},
+				{
+					"fileNames": "TEMPLATE.md,TEMPLATE.txt",
+					"name": "GitHub Dark",
+					"priority": "1001",
+					"iconType": "FILE",
+					"pattern": ".*TEMPLATE\\.(md|txt)$",
+					"iconColor": "E4E5E6",
 					"icon": "/icons/files/github.svg"
 				},
 				{
 					"fileNames": "README.md,README.txt",
 					"name": "README",
 					"priority": "1000",
+					"iconType": "FILE",
+					"pattern": "^(README|readme)(\\.(md|txt))?$",
+					"iconColor": "000000",
+					"icon": "/icons/files/readme.svg"
+				},
+				{
+					"fileNames": "README.md,README.txt",
+					"name": "README Dark",
+					"priority": "1001",
 					"iconType": "FILE",
 					"pattern": "^(README|readme)(\\.(md|txt))?$",
 					"iconColor": "E4E5E6",
@@ -167,6 +192,16 @@
 					"iconColor": "292929",
 					"url": "https://www.11ty.dev/",
 					"priority": "100",
+					"iconType": "FILE",
+					"pattern": ".*\\.(eleventy|11ty)(\\.[cm]?js|ignore)$",
+					"icon": "/icons/files/11ty.svg"
+				},
+				{
+					"fileNames": ".eleventy.js,.11ty.js,.eleventyignore,.11tyignore",
+					"name": "11ty Dark",
+					"iconColor": "d6d6d6",
+					"url": "https://www.11ty.dev/",
+					"priority": "101",
 					"iconType": "FILE",
 					"pattern": ".*\\.(eleventy|11ty)(\\.[cm]?js|ignore)$",
 					"icon": "/icons/files/11ty.svg"
@@ -499,6 +534,16 @@
 					"icon": "/icons/files/ampl.svg"
 				},
 				{
+					"fileNames": "ampconfig.json",
+					"name": "Amplication",
+					"iconColor": "7950ED",
+					"priority": "100",
+					"iconType": "FILE",
+					"pattern": "^ampconfig\\.json$",
+					"url": "https://amplication.com/",
+					"icon": "/icons/files/amplication.svg"
+				},
+				{
 					"fileNames": "amplify.yml,amplify.yaml",
 					"name": "Amplify",
 					"iconColor": "FFAF38",
@@ -659,12 +704,12 @@
 					"icon": "/icons/files/angularinterceptor.svg"
 				},
 				{
-					"fileNames": "*.routing.js,*.routing.ts,*.routing.dart",
+					"fileNames": "*.routing.js,*.routing.ts,*.routing.dart,angular-routing.js,angular_routing.ts",
 					"name": "Angular Routing",
 					"iconColor": "43A047",
 					"priority": "100",
 					"iconType": "FILE",
-					"pattern": ".*\\.routing\\.(dart|[tj]s)$",
+					"pattern": ".*[._-]routing\\.(dart|[tj]s)$",
 					"url": "https://angular.io/",
 					"icon": "/icons/files/angularrouting.svg"
 				},
@@ -749,12 +794,12 @@
 					"icon": "/icons/files/animestudio.svg"
 				},
 				{
-					"fileNames": "ansible.yml,site.yml,webservers.yml,dbservers.yml,playbook.yml",
+					"fileNames": "ansible.yml,site.yml,webservers.yml,dbservers.yml,playbook.yml,ansible.cfg,galaxy.yml,playbook.cfg",
 					"name": "Ansible",
 					"iconColor": "FF5370",
 					"priority": "100",
 					"iconType": "FILE",
-					"pattern": "^(ansible|site|webservers|dbservers|playbook)\\.ya?ml$",
+					"pattern": "^(ansible|site|webservers|dbservers|playbook|galaxy)\\.(cfg|ya?ml)$",
 					"url": "https://www.ansible.com/",
 					"icon": "/icons/files/ansible.svg"
 				},
@@ -1126,6 +1171,16 @@
 					"icon": "/icons/files/atom.svg"
 				},
 				{
+					"fileNames": "*.atomproject.json,*.atomproject.cson",
+					"name": "Atom Dark",
+					"iconColor": "C3E88D",
+					"url": "https://atom.io/",
+					"priority": "101",
+					"iconType": "FILE",
+					"pattern": ".*\\.atomproject\\.[jc]son$",
+					"icon": "/icons/files/atom.svg"
+				},
+				{
 					"fileNames": ".apmrc",
 					"name": "APM",
 					"iconColor": "689F38",
@@ -1133,7 +1188,17 @@
 					"priority": "100",
 					"iconType": "FILE",
 					"pattern": "^\\.apmrc$",
-					"icon": "/icons/files/atom.svg"
+					"icon": "/icons/files/apm.svg"
+				},
+				{
+					"fileNames": ".apmrc",
+					"name": "APM Dark",
+					"iconColor": "689F38",
+					"url": "https://atom.io/",
+					"priority": "101",
+					"iconType": "FILE",
+					"pattern": "^\\.apmrc$",
+					"icon": "/icons/files/apm.svg"
 				},
 				{
 					"fileNames": "*.atoum.php,atoum.config.php",
@@ -1383,6 +1448,16 @@
 					"icon": "/icons/files/bats.svg"
 				},
 				{
+					"fileNames": "*.bats",
+					"name": "Bats Dark",
+					"iconColor": "d2d2d2",
+					"url": "https://github.com/sstephenson/bats",
+					"priority": "101",
+					"iconType": "FILE",
+					"pattern": ".*\\.bats$",
+					"icon": "/icons/files/bats.svg"
+				},
+				{
 					"fileNames": ".bzrignore",
 					"name": "Bazaar",
 					"iconColor": "FFD54F",
@@ -1593,6 +1668,16 @@
 					"icon": "/icons/files/blitzbasic.svg"
 				},
 				{
+					"fileNames": "bloc.dart,flutter_bloc.dart,AppBloc.dart,habit_event.dart,habit_state.dart,AppState.dart",
+					"name": "Bloc",
+					"iconColor": "00D3B9",
+					"url": "https://bloclibrary.dev/#/",
+					"priority": "100",
+					"iconType": "FILE",
+					"pattern": ".*([bB]loc|[eE]vent|[sS]tate)\\.dart$",
+					"icon": "/icons/files/bloc.svg"
+				},
+				{
 					"fileNames": "*.bsv,*.bspec",
 					"name": "BlueSpec",
 					"iconColor": "1976D2",
@@ -1651,6 +1736,36 @@
 					"iconType": "FILE",
 					"pattern": ".*\\.boot$",
 					"icon": "/icons/files/boot.svg"
+				},
+				{
+					"fileNames": "bunfig.toml,.bunfig.toml",
+					"name": "Bun",
+					"iconColor": "ccbea7",
+					"url": "https://bun.sh/",
+					"priority": "100",
+					"iconType": "FILE",
+					"pattern": "^\\.?bunfig\\.toml$",
+					"icon": "/icons/files/bun.svg"
+				},
+				{
+					"fileNames": "bunfig.toml,.bunfig.toml",
+					"name": "Bun Dark",
+					"iconColor": "fbf0df",
+					"url": "https://bun.sh/",
+					"priority": "101",
+					"iconType": "FILE",
+					"pattern": "^\\.?bunfig\\.toml$",
+					"icon": "/icons/files/bun.svg"
+				},
+				{
+					"fileNames": "bun.lockb",
+					"name": "Bun Lock",
+					"iconColor": "e53935",
+					"url": "https://bun.sh/",
+					"priority": "100",
+					"iconType": "FILE",
+					"pattern": "^bun\\.lockb$",
+					"icon": "/icons/files/bunlock.svg"
 				},
 				{
 					"fileNames": "bootstrap.js,bootstrap.ts,bootstrap.css,bootstrap.scss,custom.bootstrap.js",
@@ -1883,6 +1998,16 @@
 					"icon": "/icons/files/caddy.svg"
 				},
 				{
+					"fileNames": "*.cdc,*.cadence",
+					"name": "Cadence",
+					"iconColor": "00ef8b",
+					"url": "https://developers.flow.com/",
+					"priority": "100",
+					"iconType": "FILE",
+					"pattern": ".*\\.(cdc|cadence)$",
+					"icon": "/icons/files/cadence.svg"
+				},
+				{
 					"fileNames": "*.caffemodel,*.solverstate",
 					"name": "Caffe",
 					"iconColor": "78909C",
@@ -1951,6 +2076,16 @@
 					"iconType": "FILE",
 					"pattern": ".*\\.cds$",
 					"icon": "/icons/files/cap.svg"
+				},
+				{
+					"fileNames": "*.carbon",
+					"name": "Carbon",
+					"iconColor": "7E57C2",
+					"url": "https://github.com/carbon-language/carbon-lang",
+					"priority": "100",
+					"iconType": "FILE",
+					"pattern": ".*\\.carbon$",
+					"icon": "/icons/files/carbon.svg"
 				},
 				{
 					"fileNames": "cargo.toml,cargo.lock",
@@ -2739,6 +2874,16 @@
 					"icon": "/icons/files/csound.svg"
 				},
 				{
+					"fileNames": "*.orc,*.udo,*.csc,*.sco",
+					"name": "CSound Dark",
+					"priority": "101",
+					"iconType": "FILE",
+					"pattern": "^.*\\.(orc|udo|csc|sco)$",
+					"url": "https://csound.com/",
+					"iconColor": "dadada",
+					"icon": "/icons/files/csound.svg"
+				},
+				{
 					"fileNames": ".cspell,.cspell.json,.cspell.yaml,.cspell.yml,cspell.config.js,cspell.config.yaml",
 					"name": "CSpell",
 					"priority": "100",
@@ -2827,6 +2972,16 @@
 					"iconType": "FILE",
 					"pattern": ".*\\.cuh$",
 					"icon": "/icons/files/cuh.svg"
+				},
+				{
+					"fileNames": "*.cue",
+					"name": "Cue",
+					"iconColor": "29B6F6",
+					"url": "https://cuelang.org/",
+					"priority": "100",
+					"iconType": "FILE",
+					"pattern": ".*\\.cue$",
+					"icon": "/icons/files/cue.svg"
 				},
 				{
 					"fileNames": "*.cfl",
@@ -2969,16 +3124,6 @@
 					"icon": "/icons/files/dal.svg"
 				},
 				{
-					"fileNames": "*.dart",
-					"name": "Dart",
-					"iconColor": "26A2C1",
-					"url": "https://dart.dev/",
-					"priority": "100",
-					"iconType": "FILE",
-					"pattern": ".*\\.dart$",
-					"icon": "/icons/files/dart.svg"
-				},
-				{
 					"fileNames": ".pubignore",
 					"name": "Dart Pubignore",
 					"iconColor": "808080",
@@ -3058,6 +3203,26 @@
 					"icon": "/icons/files/debian.svg"
 				},
 				{
+					"fileNames": ".deepsource.toml",
+					"name": "DeepSource",
+					"iconColor": "232B33",
+					"url": "https://deepsource.io/",
+					"priority": "100",
+					"iconType": "FILE",
+					"pattern": "^\\.deepsource\\.toml$",
+					"icon": "/icons/files/deepsource.svg"
+				},
+				{
+					"fileNames": ".deepsource.toml",
+					"name": "DeepSource Dark",
+					"iconColor": "FFFFFF",
+					"url": "https://deepsource.io/",
+					"priority": "101",
+					"iconType": "FILE",
+					"pattern": "^\\.deepsource\\.toml$",
+					"icon": "/icons/files/deepsource.svg"
+				},
+				{
 					"fileNames": "*.delphi,*.dfm,*.dof,*.dpr",
 					"name": "Delphi",
 					"iconColor": "eb2734",
@@ -3083,6 +3248,16 @@
 					"iconColor": "222222",
 					"url": "https://deno.land/",
 					"priority": "100",
+					"iconType": "FILE",
+					"pattern": "^(mod|import_map)\\.(ts|json)$",
+					"icon": "/icons/files/deno.svg"
+				},
+				{
+					"fileNames": "mod.ts,import_map.json",
+					"name": "Deno Dark",
+					"iconColor": "FAFAFA",
+					"url": "https://deno.land/",
+					"priority": "101",
 					"iconType": "FILE",
 					"pattern": "^(mod|import_map)\\.(ts|json)$",
 					"icon": "/icons/files/deno.svg"
@@ -3166,6 +3341,16 @@
 					"icon": "/icons/files/dhall.svg"
 				},
 				{
+					"fileNames": "*.dhall",
+					"name": "Dhall Dark",
+					"iconColor": "858585",
+					"url": "https://dhall-lang.org/",
+					"priority": "101",
+					"iconType": "FILE",
+					"pattern": ".*\\.dhall$",
+					"icon": "/icons/files/dhall.svg"
+				},
+				{
 					"fileNames": "*.dia",
 					"name": "Dia",
 					"iconColor": "DCE775",
@@ -3200,6 +3385,15 @@
 					"name": "Diff",
 					"iconColor": "78909C",
 					"priority": "100",
+					"iconType": "FILE",
+					"pattern": ".*\\.diffs?$",
+					"icon": "/icons/files/diff.svg"
+				},
+				{
+					"fileNames": "*.diff,*.diffs",
+					"name": "Diff Dark",
+					"iconColor": "B2CCD6",
+					"priority": "101",
 					"iconType": "FILE",
 					"pattern": ".*\\.diffs?$",
 					"icon": "/icons/files/diff.svg"
@@ -3275,13 +3469,13 @@
 					"icon": "/icons/files/docker.svg"
 				},
 				{
-					"fileNames": "docker-compose.yml,docker-compose.yaml,docker-compose.dev.yml",
+					"fileNames": "docker-compose.yml,docker-compose.yaml,docker-compose.dev.yml,compose.yaml,compose.yml",
 					"name": "DockerCompose",
 					"iconColor": "1e9cef",
 					"url": "https://www.docker.com/",
 					"priority": "100",
 					"iconType": "FILE",
-					"pattern": "^docker-compose(.*)\\.(yml|yaml)$",
+					"pattern": "^(docker-)?compose(.*)\\.(yml|yaml)$",
 					"icon": "/icons/files/dockercompose.svg"
 				},
 				{
@@ -3583,6 +3777,16 @@
 					"pattern": "^\\.earthlyignore$",
 					"url": "https://earthly.dev/",
 					"icon": "/icons/files/earthlyignore.svg"
+				},
+				{
+					"fileNames": "store.config.json",
+					"name": "EAS Metadata",
+					"iconColor": "039BE5",
+					"url": "https://docs.expo.dev/eas/metadata/",
+					"priority": "100",
+					"iconType": "FILE",
+					"pattern": "^store\\.config\\.json$",
+					"icon": "/icons/files/eas.svg"
 				},
 				{
 					"fileNames": "*.eb",
@@ -4244,6 +4448,16 @@
 					"icon": "/icons/files/flow.svg"
 				},
 				{
+					"fileNames": "*.flow,*.flowconfig",
+					"name": "Flow Dark",
+					"iconColor": "C3E88D",
+					"url": "https://flow.org/",
+					"priority": "101",
+					"iconType": "FILE",
+					"pattern": ".*\\.(flow|flowconfig)$",
+					"icon": "/icons/files/flow.svg"
+				},
+				{
 					"fileNames": ".flutter-plugins,.packages,.metadata",
 					"name": "Flutter",
 					"iconColor": "64B5F6",
@@ -4568,6 +4782,16 @@
 					"name": "Gauge",
 					"iconColor": "25282D",
 					"priority": "100",
+					"iconType": "FILE",
+					"pattern": ".*\\.spec$",
+					"url": "https://docs.gauge.org/",
+					"icon": "/icons/files/gauge.svg"
+				},
+				{
+					"fileNames": "*.spec",
+					"name": "Gauge Dark",
+					"iconColor": "dad8d2",
+					"priority": "101",
 					"iconType": "FILE",
 					"pattern": ".*\\.spec$",
 					"url": "https://docs.gauge.org/",
@@ -5253,6 +5477,26 @@
 					"icon": "/icons/files/hie.svg"
 				},
 				{
+					"fileNames": "histoire.config.js,histoire.ts,.histoire.ts,.histoire.tsx,histoire.config.mjs",
+					"name": "Histoire",
+					"iconColor": "34d399",
+					"priority": "100",
+					"iconType": "FILE",
+					"url": "https://histoire.dev/",
+					"pattern": "^\\.?histoire.*\\.[cm]?[jt]sx?$",
+					"icon": "/icons/files/histoire.svg"
+				},
+				{
+					"fileNames": "*.story.vue,*.stories.vue",
+					"name": "Histoire Stories",
+					"iconColor": "34d399",
+					"priority": "100",
+					"iconType": "FILE",
+					"url": "https://histoire.dev/",
+					"pattern": ".*\\.stor(y|ies)\\.vue$",
+					"icon": "/icons/files/histoirestories.svg"
+				},
+				{
 					"fileNames": "history,history.txt,historyfile",
 					"name": "History",
 					"iconColor": "8bc34a",
@@ -5462,6 +5706,16 @@
 					"icon": "/icons/files/hyper.svg"
 				},
 				{
+					"fileNames": "hypestyle.config.js",
+					"name": "HypeStyle",
+					"iconColor": "3A7F0D",
+					"url": "https://www.hypestylecss.xyz/docs/intro",
+					"priority": "100",
+					"iconType": "FILE",
+					"pattern": "hypestyle\\.config\\.js$",
+					"icon": "/icons/files/hypestyle.svg"
+				},
+				{
 					"fileNames": "*.hypr,*.hypr.live",
 					"name": "Hypr",
 					"iconColor": "ffce01",
@@ -5659,6 +5913,16 @@
 					"icon": "/icons/files/inkscape.svg"
 				},
 				{
+					"fileNames": "*.inx",
+					"name": "Inkscape Dark",
+					"iconColor": "EEEEEE",
+					"url": "https://inkscape.org/",
+					"priority": "101",
+					"iconType": "FILE",
+					"pattern": ".*\\.inx$",
+					"icon": "/icons/files/inkscape.svg"
+				},
+				{
 					"fileNames": "*.iss,*.isl",
 					"name": "InnoSetup",
 					"iconColor": "64B5F6",
@@ -5734,6 +5998,16 @@
 					"iconColor": "ff9c00",
 					"url": "https://isabelle.in.tum.de/",
 					"priority": "100",
+					"iconType": "FILE",
+					"pattern": ".*\\.thy$",
+					"icon": "/icons/files/isabelle.svg"
+				},
+				{
+					"fileNames": "*.thy",
+					"name": "Isabelle Dark",
+					"iconColor": "feff05",
+					"url": "https://isabelle.in.tum.de/",
+					"priority": "101",
 					"iconType": "FILE",
 					"pattern": ".*\\.thy$",
 					"icon": "/icons/files/isabelle.svg"
@@ -5847,6 +6121,16 @@
 					"iconType": "FILE",
 					"pattern": ".*\\.jekyll$",
 					"icon": "/icons/files/jekyll.svg"
+				},
+				{
+					"fileNames": "*.jelly",
+					"name": "Jellycut",
+					"iconColor": "682ef1",
+					"url": "https://jellycuts.com/",
+					"priority": "100",
+					"iconType": "FILE",
+					"pattern": ".*\\.jelly$",
+					"icon": "/icons/files/jellycut.svg"
 				},
 				{
 					"fileNames": "jenkinsfile,Jenkinsfile.groovy",
@@ -6108,6 +6392,16 @@
 					"icon": "/icons/files/junos.svg"
 				},
 				{
+					"fileNames": "*.jwt",
+					"name": "JWT",
+					"iconColor": "D63AFF",
+					"url": "https://jwt.io/",
+					"priority": "100",
+					"iconType": "FILE",
+					"pattern": ".*\\.jwt$",
+					"icon": "/icons/files/jwt.svg"
+				},
+				{
 					"fileNames": "*.ksy",
 					"name": "Kaitai",
 					"iconColor": "773b37",
@@ -6123,6 +6417,16 @@
 					"iconColor": "6AAB20",
 					"url": "https://karma-runner.github.io/latest/index.html",
 					"priority": "100",
+					"iconType": "FILE",
+					"pattern": "^karma\\.conf(ig)?\\.(js|ts|coffee)$",
+					"icon": "/icons/files/karma.svg"
+				},
+				{
+					"fileNames": "karma.conf.js,karma.conf.ts,karma.config.coffee",
+					"name": "Karma Dark",
+					"iconColor": "C3E88D",
+					"url": "https://karma-runner.github.io/latest/index.html",
+					"priority": "101",
 					"iconType": "FILE",
 					"pattern": "^karma\\.conf(ig)?\\.(js|ts|coffee)$",
 					"icon": "/icons/files/karma.svg"
@@ -6158,12 +6462,12 @@
 					"icon": "/icons/files/keynote.svg"
 				},
 				{
-					"fileNames": "*.key,*.pem,*.gpg,*.pub,*.der,*.ssh,*.passwd,*.kdbx",
+					"fileNames": "*.key,*.pem,*.gpg,*.pub,*.der,*.ssh,*.passwd,*.kdbx,*.enc",
 					"name": "Key",
 					"iconColor": "26a69a",
 					"priority": "100",
 					"iconType": "FILE",
-					"pattern": ".*\\.(key|pem|gpg|pub|der|ssh|passwd|kdbx)",
+					"pattern": ".*\\.(key|pem|gpg|pub|der|ssh|passwd|kdbx|enc)",
 					"icon": "/icons/files/key.svg"
 				},
 				{
@@ -6270,6 +6574,16 @@
 					"iconColor": "111111",
 					"url": "https://github.com/koka-lang/koka",
 					"priority": "100",
+					"iconType": "FILE",
+					"pattern": ".*\\.kk$",
+					"icon": "/icons/files/koka.svg"
+				},
+				{
+					"fileNames": "*.kk",
+					"name": "Koka Dark",
+					"iconColor": "eeeeee",
+					"url": "https://github.com/koka-lang/koka",
+					"priority": "101",
 					"iconType": "FILE",
 					"pattern": ".*\\.kk$",
 					"icon": "/icons/files/koka.svg"
@@ -6495,12 +6809,12 @@
 					"icon": "/icons/files/licensebat.svg"
 				},
 				{
-					"fileNames": ".lighthouserc,.lighthouserc.json,.lighthouserc.js,lighthouserc.yaml",
+					"fileNames": ".lighthouserc,.lighthouserc.json,.lighthouserc.js,lighthouserc.yaml,lighthouserc.cjs,lighthouserc.ts",
 					"name": "Lighthouse",
 					"iconColor": "1a45c5",
 					"priority": "100",
 					"iconType": "FILE",
-					"pattern": "^\\.?lighthouserc(\\.(json|js|ya?ml))?$",
+					"pattern": "^\\.?lighthouserc(\\.(json|[cm]?[jt]s|ya?ml))?$",
 					"url": "https://github.com/GoogleChrome/lighthouse",
 					"icon": "/icons/files/lighthouse.svg"
 				},
@@ -7174,13 +7488,13 @@
 					"icon": "/icons/files/mobx.svg"
 				},
 				{
-					"fileNames": "mocha.opts,.mocharc",
+					"fileNames": "mocha.opts,.mocharc,.mocharc.json",
 					"name": "Mocha",
 					"iconColor": "ab7967",
 					"url": "https://mochajs.org/",
 					"priority": "100",
 					"iconType": "FILE",
-					"pattern": "^(mocha\\.opts|\\.mocharc)$",
+					"pattern": "^(mocha\\.opts|\\.mocharc(\\.json)?)$",
 					"icon": "/icons/files/mocha.svg"
 				},
 				{
@@ -7556,8 +7870,18 @@
 				{
 					"fileNames": "*.neon",
 					"name": "Neon",
-					"iconColor": "f1ecda",
+					"iconColor": "605e57",
 					"priority": "100",
+					"iconType": "FILE",
+					"pattern": ".*\\.neon$",
+					"url": "https://ne-on.org/",
+					"icon": "/icons/files/neon.svg"
+				},
+				{
+					"fileNames": "*.neon",
+					"name": "Neon Dark",
+					"iconColor": "f1ecda",
+					"priority": "101",
 					"iconType": "FILE",
 					"pattern": ".*\\.neon$",
 					"url": "https://ne-on.org/",
@@ -8303,6 +8627,16 @@
 					"icon": "/icons/files/nx.svg"
 				},
 				{
+					"fileNames": "nx.json",
+					"name": "Nx Dark",
+					"iconColor": "24599d",
+					"priority": "101",
+					"iconType": "FILE",
+					"pattern": "^(nx|workspace|project)\\.json$",
+					"url": "https://nx.dev/",
+					"icon": "/icons/files/nx.svg"
+				},
+				{
 					"fileNames": "*.nxc",
 					"name": "NXC",
 					"iconColor": "FFB74D",
@@ -8733,6 +9067,16 @@
 					"icon": "/icons/files/parrot.svg"
 				},
 				{
+					"fileNames": "*.parquet",
+					"name": "Parquet",
+					"iconColor": "4fadf1",
+					"url": "https://parquet.apache.org/",
+					"priority": "100",
+					"iconType": "FILE",
+					"pattern": ".*\\.parquet$",
+					"icon": "/icons/files/parquet.svg"
+				},
+				{
 					"fileNames": "*.pas,*.pascal,*.lpr,*.lps,*.lpk,*.lpi,*.lfm,*.lrs,*.lrt,*.or,*.ppu",
 					"name": "Pascal",
 					"iconColor": "757575",
@@ -8858,6 +9202,16 @@
 					"iconColor": "6AAB20",
 					"url": "https://phalcon.io/en-us",
 					"priority": "100",
+					"iconType": "FILE",
+					"pattern": ".*\\.volt$",
+					"icon": "/icons/files/phalcon.svg"
+				},
+				{
+					"fileNames": "*.volt",
+					"name": "Phalcon Dark",
+					"iconColor": "C3E88D",
+					"url": "https://phalcon.io/en-us",
+					"priority": "101",
 					"iconType": "FILE",
 					"pattern": ".*\\.volt$",
 					"icon": "/icons/files/phalcon.svg"
@@ -9593,6 +9947,16 @@
 					"icon": "/icons/files/qsharp.svg"
 				},
 				{
+					"fileNames": "*.qs",
+					"name": "Q# Dark",
+					"iconColor": "3F51B5",
+					"priority": "101",
+					"iconType": "FILE",
+					"pattern": ".*\\.qs$",
+					"url": "https://docs.microsoft.com/en-us/azure/quantum/",
+					"icon": "/icons/files/qsharp.svg"
+				},
+				{
 					"fileNames": "*.q,*.k",
 					"name": "Q/Kdb",
 					"iconColor": "64B5F6",
@@ -10056,7 +10420,7 @@
 					"fileNames": "*.red",
 					"name": "Red",
 					"iconColor": "EF5350",
-					"fill": "https://www.red-lang.org/",
+					"url": "https://www.red-lang.org/",
 					"priority": "100",
 					"iconType": "FILE",
 					"pattern": ".*\\.red",
@@ -10236,7 +10600,7 @@
 					"fileNames": "*.resi",
 					"name": "ReScript",
 					"iconColor": "e6484f",
-					"fill": "https://rescript-lang.org/",
+					"url": "https://rescript-lang.org/",
 					"priority": "100",
 					"iconType": "FILE",
 					"pattern": ".*\\.resi",
@@ -10417,6 +10781,16 @@
 					"iconColor": "551354",
 					"url": "https://rsync.samba.org/",
 					"priority": "100",
+					"iconType": "FILE",
+					"pattern": "^rsyncd\\.conf$",
+					"icon": "/icons/files/rsync.svg"
+				},
+				{
+					"fileNames": "rsyncd.conf",
+					"name": "rsync Dark",
+					"iconColor": "b428b1",
+					"url": "https://rsync.samba.org/",
+					"priority": "101",
 					"iconType": "FILE",
 					"pattern": "^rsyncd\\.conf$",
 					"icon": "/icons/files/rsync.svg"
@@ -10960,6 +11334,16 @@
 					"icon": "/icons/files/skript.svg"
 				},
 				{
+					"fileNames": "*.sk,*.skript",
+					"name": "Skript Dark",
+					"iconColor": "fefefe",
+					"url": "https://skriptlang.github.io/Skript/index.html",
+					"priority": "101",
+					"iconType": "FILE",
+					"pattern": ".*\\.sk(ript)?$",
+					"icon": "/icons/files/skript.svg"
+				},
+				{
 					"fileNames": "*.slang",
 					"name": "Slang",
 					"iconColor": "b7162c",
@@ -11118,6 +11502,16 @@
 					"iconType": "FILE",
 					"pattern": ".*\\.sonarrc$",
 					"icon": "/icons/files/sonar.svg"
+				},
+				{
+					"fileNames": "sonar-project.properties,sonarcloud.properties,.sonarcloud.properties,.sonarcloud.yaml",
+					"name": "SonarCloud",
+					"iconColor": "fd6a00",
+					"url": "https://sonarcloud.io/",
+					"priority": "100",
+					"iconType": "FILE",
+					"pattern": "^\\.?(sonar-project|sonarcloud)\\.(properties|ya?ml)$",
+					"icon": "/icons/files/sonarcloud.svg"
 				},
 				{
 					"fileNames": "*.aes",
@@ -11490,13 +11884,13 @@
 					"icon": "/icons/files/supabase.svg"
 				},
 				{
-					"fileNames": "*.svelte,*.svx,*.svelte-kit",
+					"fileNames": "*.svelte,*.svelte-kit",
 					"name": "Svelte",
 					"iconColor": "ff5722",
 					"url": "https://svelte.dev/",
 					"priority": "100",
 					"iconType": "FILE",
-					"pattern": ".*\\.(svelte(-kit)?|svx)",
+					"pattern": ".*\\.svelte(-kit)?",
 					"icon": "/icons/files/svelte.svg"
 				},
 				{
@@ -11508,6 +11902,16 @@
 					"iconType": "FILE",
 					"pattern": "svelte\\.config\\.[cm]?js(on)?$",
 					"icon": "/icons/files/svelte_config.svg"
+				},
+				{
+					"fileNames": "*.svx",
+					"name": "MDSvex",
+					"iconColor": "ffca28",
+					"url": "https://mdsvex.pngwn.io/docs",
+					"priority": "100",
+					"iconType": "FILE",
+					"pattern": ".*\\.svx",
+					"icon": "/icons/files/svx.svg"
 				},
 				{
 					"fileNames": ".svn,.svnignore",
@@ -11590,6 +11994,16 @@
 					"icon": "/icons/files/symfony.svg"
 				},
 				{
+					"fileNames": "symfony.lock",
+					"name": "Symfony Dark",
+					"iconColor": "C3E88D",
+					"url": "https://symfony.com/",
+					"priority": "101",
+					"iconType": "FILE",
+					"pattern": "^symfony\\.lock$",
+					"icon": "/icons/files/symfony.svg"
+				},
+				{
 					"fileNames": "*.toc,*.listing",
 					"name": "Table of Contents",
 					"iconColor": "66BB6A",
@@ -11625,6 +12039,16 @@
 					"iconType": "FILE",
 					"pattern": "^\\.?tailwind.*\\.[cm]?[jt]s$",
 					"icon": "/icons/files/tailwindcss.svg"
+				},
+				{
+					"fileNames": "tauri.js,tauri.conf.js,tauri.conf.json,tauri.config.cjs,tauri.config.ts",
+					"name": "Tauri",
+					"iconColor": "44a8b3",
+					"url": "https://tauri.app/",
+					"priority": "100",
+					"iconType": "FILE",
+					"pattern": "^tauri.*\\.([cm]?[jt]s|json)$",
+					"icon": "/icons/files/tauri.svg"
 				},
 				{
 					"fileNames": "*.tcl,*.adp,*.tm,*.exp,*.tkvcs,*.tkdiffrc",
@@ -11791,6 +12215,15 @@
 					"icon": "/icons/files/testjs.svg"
 				},
 				{
+					"fileNames": "*.test.js,*.spec.js,*.test.es6,*.spec.es6,*.test.mjs,*.spec.cjs",
+					"name": "Test JS Dark",
+					"iconColor": "FFCB6B",
+					"priority": "101",
+					"iconType": "FILE",
+					"pattern": ".*\\.?(test|spec)\\.[cm]?(js|es6)$",
+					"icon": "/icons/files/testjs.svg"
+				},
+				{
 					"fileNames": "*.test.perl,*.spec.pl,*.test.pl6,*.test.pm6,*.spec.ph",
 					"name": "Test Perl",
 					"iconColor": "4DB6AC",
@@ -11947,7 +12380,7 @@
 					"fileNames": "*.tla",
 					"name": "TLA+",
 					"iconColor": "FFF176",
-					"ur": "https://lamport.azurewebsites.net/tla/tools.html",
+					"url": "https://lamport.azurewebsites.net/tla/tools.html",
 					"priority": "100",
 					"iconType": "FILE",
 					"pattern": ".*\\.tla$",
@@ -11964,13 +12397,13 @@
 					"icon": "/icons/files/tmux.svg"
 				},
 				{
-					"fileNames": ".truffle.cjs,.truffle.js,.truffle.mjs",
+					"fileNames": ".truffle.cjs,.truffle.js,.truffle.mjs,truffle-config.cjs,truffle-config.ts,truffle-config.mjs",
 					"name": "Truffle",
 					"iconColor": "A1887F",
 					"url": "https://www.graalvm.org/",
 					"priority": "100",
 					"iconType": "FILE",
-					"pattern": "^\\.truffle\\.[cm]?js$",
+					"pattern": "^\\.?truffle(-config)?\\.[cm]?[jt]s$",
 					"icon": "/icons/files/truffle.svg"
 				},
 				{
@@ -12253,6 +12686,16 @@
 					"icon": "/icons/files/uos.svg"
 				},
 				{
+					"fileNames": "*.u",
+					"name": "Unison",
+					"iconColor": "27ae60",
+					"url": "https://www.unison-lang.org/",
+					"priority": "100",
+					"iconType": "FILE",
+					"pattern": ".*\\.u$",
+					"icon": "/icons/files/unison.svg"
+				},
+				{
 					"fileNames": "unlicense,UNLICENSE,UNLICENCE.txt,unlicence.md",
 					"name": "Unlicense",
 					"iconColor": "808080",
@@ -12271,6 +12714,16 @@
 					"iconColor": "ab61f2",
 					"url": "https://fuseopen.com/docs/uno/uno-lang.html",
 					"icon": "/icons/files/uno.svg"
+				},
+				{
+					"fileNames": "uno.config.js,uno.config.ts,uno.config.cjs",
+					"name": "UnoCSS",
+					"priority": "100",
+					"iconType": "FILE",
+					"pattern": "^uno\\.config\\.[cm]?[tj]s$",
+					"iconColor": "888888",
+					"url": "https://github.com/unocss/unocss",
+					"icon": "/icons/files/unocss.svg"
 				},
 				{
 					"fileNames": "*.u,*.unr,*.utx,*.umx,*.uax,*.ukx,*.uz,*.upkg,*.uc,*.upl,*.asc,*.lwo,*.uasset",
@@ -12385,9 +12838,19 @@
 				{
 					"fileNames": "vercel.json",
 					"name": "Vercel",
-					"iconColor": "f78c6c",
+					"iconColor": "212121",
 					"url": "https://vercel.com/",
 					"priority": "100",
+					"iconType": "FILE",
+					"pattern": "^vercel\\.json$",
+					"icon": "/icons/files/vercel.svg"
+				},
+				{
+					"fileNames": "vercel.json",
+					"name": "Vercel Dark",
+					"iconColor": "fafafa",
+					"url": "https://vercel.com/",
+					"priority": "101",
 					"iconType": "FILE",
 					"pattern": "^vercel\\.json$",
 					"icon": "/icons/files/vercel.svg"
@@ -12524,8 +12987,18 @@
 				{
 					"fileNames": "*.volt",
 					"name": "Volt",
-					"iconColor": "dfe1e1",
+					"iconColor": "201e1e",
 					"priority": "100",
+					"iconType": "FILE",
+					"pattern": ".*\\.volt$",
+					"url": "http://www.volt-lang.org/",
+					"icon": "/icons/files/volt.svg"
+				},
+				{
+					"fileNames": "*.volt",
+					"name": "Volt Dark",
+					"iconColor": "dfe1e1",
+					"priority": "101",
 					"iconType": "FILE",
 					"pattern": ".*\\.volt$",
 					"url": "http://www.volt-lang.org/",
@@ -12547,6 +13020,16 @@
 					"iconColor": "323232",
 					"url": "https://code.visualstudio.com/docs/editor/extension-marketplace",
 					"priority": "100",
+					"iconType": "FILE",
+					"pattern": ".*\\.vsix(manifest)?$",
+					"icon": "/icons/files/vsix.svg"
+				},
+				{
+					"fileNames": "*.vsix,*.vsixmanifest",
+					"name": "VSCode Extension Dark",
+					"iconColor": "cfcfcf",
+					"url": "https://code.visualstudio.com/docs/editor/extension-marketplace",
+					"priority": "101",
 					"iconType": "FILE",
 					"pattern": ".*\\.vsix(manifest)?$",
 					"icon": "/icons/files/vsix.svg"
@@ -12600,16 +13083,6 @@
 					"iconType": "FILE",
 					"pattern": "^\\.tfignore$",
 					"icon": "/icons/files/tfsignore.svg"
-				},
-				{
-					"fileNames": "*.vue",
-					"name": "Vue",
-					"iconColor": "41B883",
-					"url": "https://vuejs.org/",
-					"priority": "100",
-					"iconType": "FILE",
-					"pattern": ".*\\.vue$",
-					"icon": "/icons/files/vue.svg"
 				},
 				{
 					"fileNames": "vue.config.js,vue.config.mjs,vue.config.cjs",
@@ -12752,11 +13225,11 @@
 					"icon": "/icons/files/owl.svg"
 				},
 				{
-					"fileNames": "webpack.common.js,webpack.config.js,webpack.dev.js,webpack.prod.js,webpack.config.ts,webpack.config.es6,webpack.dev.coffee",
+					"fileNames": "webpack.common.js,webpack.config.js,webpack.dev.js,webpack.prod.js,webpack.config.ts,webpack.config.es6,webpack.dev.coffee,webpack.config.mjs,webpack.config.cjs",
 					"name": "Webpack",
 					"priority": "100",
 					"iconType": "FILE",
-					"pattern": "^webpack\\.(common|config|dev|prod)\\.(js|es|es6|coffee|ts)$",
+					"pattern": "^webpack\\.(common|config|dev|prod)\\.([mc]?js|es|es6|coffee|ts)$",
 					"url": "https://webpack.js.org/",
 					"iconColor": "497CE3",
 					"icon": "/icons/files/webpack.svg"
@@ -12832,6 +13305,16 @@
 					"icon": "/icons/files/wget.svg"
 				},
 				{
+					"fileNames": "*.wgsl",
+					"name": "WGSL",
+					"iconColor": "005a9c",
+					"url": "https://sotrh.github.io/learn-wgpu",
+					"priority": "100",
+					"iconType": "FILE",
+					"pattern": ".*\\.wgsl$",
+					"icon": "/icons/files/wgsl.svg"
+				},
+				{
 					"fileNames": "windi.config.js,windi.config.ts",
 					"name": "Windi.css",
 					"iconColor": "41a0ee",
@@ -12860,6 +13343,26 @@
 					"pattern": ".*\\.(xaml|baml)$",
 					"url": "https://github.com/microsoft/microsoft-ui-xaml",
 					"icon": "/icons/files/winui.svg"
+				},
+				{
+					"fileNames": "*.wt,*.wikitext",
+					"name": "Wikitext",
+					"iconColor": "000000",
+					"url": "https://en.wikipedia.org/wiki/Help:Wikitext",
+					"priority": "100",
+					"iconType": "FILE",
+					"pattern": ".*\\.(wt|wikitext)$",
+					"icon": "/icons/files/wix.svg"
+				},
+				{
+					"fileNames": "*.wt,*.wikitext",
+					"name": "Wikitext Dark",
+					"iconColor": "ffffff",
+					"url": "https://en.wikipedia.org/wiki/Help:Wikitext",
+					"priority": "101",
+					"iconType": "FILE",
+					"pattern": ".*\\.(wt|wikitext)$",
+					"icon": "/icons/files/wix.svg"
 				},
 				{
 					"fileNames": "*.wix,*.wixproj,*.wixobj,*.wxi,*.wxl",
@@ -13252,6 +13755,16 @@
 					"icon": "/icons/files/yorick.svg"
 				},
 				{
+					"fileNames": "*.yorick",
+					"name": "Yorick Dark",
+					"iconColor": "ffe0bb",
+					"url": "https://en.wikipedia.org/wiki/Yorick_(programming_language)",
+					"priority": "101",
+					"iconType": "FILE",
+					"pattern": ".*\\.yorick$",
+					"icon": "/icons/files/yorick.svg"
+				},
+				{
 					"fileNames": "*.yue",
 					"name": "YueScript",
 					"iconColor": "B4AC8F",
@@ -13297,6 +13810,16 @@
 					"iconColor": "212121",
 					"url": "https://vercel.com/",
 					"priority": "100",
+					"iconType": "FILE",
+					"pattern": "^now\\.json$",
+					"icon": "/icons/files/zeit.svg"
+				},
+				{
+					"fileNames": "now.json",
+					"name": "Zeit Now Dark",
+					"iconColor": "fafafa",
+					"url": "https://vercel.com/",
+					"priority": "101",
 					"iconType": "FILE",
 					"pattern": "^now\\.json$",
 					"icon": "/icons/files/zeit.svg"
@@ -13473,6 +13996,15 @@
 					"icon": "/icons/files/svg.svg"
 				},
 				{
+					"fileNames": "*.svg,*.svgz",
+					"name": "SVG Dark",
+					"priority": "11",
+					"iconType": "FILE",
+					"pattern": ".*\\.svgz?$",
+					"iconColor": "FFCB6B",
+					"icon": "/icons/files/svg.svg"
+				},
+				{
 					"fileNames": "*.ld,*.ldif,*.lds,*.ld,*.ini,*.cnf,*.config,*.cfg,*.mcf,*.kys,*.props",
 					"name": "Preferences",
 					"iconColor": "E79627",
@@ -13506,6 +14038,15 @@
 					"iconType": "FILE",
 					"pattern": ".*\\.(prefs?)$",
 					"iconColor": "1E88E5",
+					"icon": "/icons/files/config.svg"
+				},
+				{
+					"fileNames": "*.pref,*.prefs",
+					"name": "Prefs Dark",
+					"priority": "11",
+					"iconType": "FILE",
+					"pattern": ".*\\.(prefs?)$",
+					"iconColor": "82AAFF",
 					"icon": "/icons/files/config.svg"
 				},
 				{
@@ -13649,6 +14190,26 @@
 					"iconType": "FILE",
 					"pattern": ".*\\.(css|tss)$",
 					"icon": "/icons/files/css.svg"
+				},
+				{
+					"fileNames": "*.css,*.tss",
+					"name": "CSS Dark",
+					"iconColor": "89DDFF",
+					"url": "https://www.w3.org/Style/CSS/Overview.en.html",
+					"priority": "2",
+					"iconType": "FILE",
+					"pattern": ".*\\.(css|tss)$",
+					"icon": "/icons/files/css.svg"
+				},
+				{
+					"fileNames": "*.dart",
+					"name": "Dart",
+					"iconColor": "26A2C1",
+					"url": "https://dart.dev/",
+					"priority": "10",
+					"iconType": "FILE",
+					"pattern": ".*\\.dart$",
+					"icon": "/icons/files/dart.svg"
 				},
 				{
 					"fileNames": "*.html,*.htm,*.xhtml,*.mhtml,*.dtml,*.kit,*.latte,*.isml,*.scaml",
@@ -13923,6 +14484,16 @@
 					"iconType": "FILE",
 					"pattern": ".*\\.(md|MD|markdown|mk?down|mkd|pmd|jmd)$",
 					"icon": "/icons/files/markdown.svg"
+				},
+				{
+					"fileNames": "*.vue",
+					"name": "Vue",
+					"iconColor": "41B883",
+					"url": "https://vuejs.org/",
+					"priority": "10",
+					"iconType": "FILE",
+					"pattern": ".*\\.vue$",
+					"icon": "/icons/files/vue.svg"
 				},
 				{
 					"fileNames": "*.xml,*.fxml,*.jrxml",
